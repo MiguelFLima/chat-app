@@ -1,15 +1,15 @@
-import React from 'react';
-import * as C from './styles';
+import React from "react";
+import * as C from "./styles";
 import SidebarHeader from '../SidebarHeader';
-import SidebarChats from '../SidebarChats';
+import SidebarChats from "../SidebarChats/index";
 
 const Sidebar = ({ setUserChat, userChat }) => {
   return (
     <C.Container>
       <SidebarHeader setUserChat={setUserChat} />
-      <SidebarChats setuserChat={setUserChat} userChat={userChat} />
+      <SidebarChats setUserChat={setUserChat} userChat={userChat} />
     </C.Container>
-  )
-}
+  );
+};
 
 export default Sidebar;

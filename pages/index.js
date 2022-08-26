@@ -5,6 +5,8 @@ import { auth, db} from '../services/firebase';
 import Login from '../components/Login';
 import Loading from '../components/Loading';
 import * as C from '../styles/HomeStyle';
+import Chat from '../components/Chat';
+
 
 
 export default function Home() {
@@ -28,6 +30,7 @@ export default function Home() {
   return (
     <C.Container>
       <Sidebar setUserChat={setUserChat} userChat={userChat} />
+      <Chat userChat={userChat} />
     </C.Container>
   )
 }
